@@ -6,7 +6,7 @@ import styled from "styled-components";
 import AboutInfoItem from "../Components/AboutInfoItem";
 import AboutInfoNewItem from "../Components/AboutInfoNewItem";
 import Skills from "../Components/Skills";
-
+import SaumilSkills from "../assets/data/Skills.data";
 const AboutPageStyle = styled.div`
   padding: 20rem 0 10rem 0;
   .top-section {
@@ -89,6 +89,7 @@ const AboutPageStyle = styled.div`
 `;
 
 export default function About() {
+
   return (
     <AboutPageStyle>
       <div className="container">
@@ -149,18 +150,19 @@ export default function About() {
           </div>
           <div className="about__info__item">
             <h1 className="about__info__heading">My Skills</h1>
-            <AboutInfoNewItem
-              title="FrontEnd"
-              items={["HTML", "CSS", "JavaScript", "REACT"]} 
+            <Skills
+              title={SaumilSkills.at(0).title}
+              mySkills={SaumilSkills.at(0).skills}
             />
-            <AboutInfoNewItem
-              title="BackEnd"
-              items={["Node", "Express", "PHP"]}
+            <Skills
+              title={SaumilSkills.at(1).title}
+              mySkills={SaumilSkills.at(1).skills}
             />
-            <AboutInfoNewItem
-              title="Design"
-              items={["Photoshop", "After Effects", "Figma"]}
+            <Skills
+              title={SaumilSkills.at(2).title}
+              mySkills={SaumilSkills.at(2).skills}
             />
+
           </div>
           <div className="about__info__item">
             <h1 className="about__info__heading">Experiences</h1>

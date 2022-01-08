@@ -13,6 +13,8 @@ const GlobalStyles = createGlobalStyle`
     --gray-2: #363636;
     --white : white;
     --black: black;
+    --border-color:#2e344e;
+    --primary-color:#007bff;
   }
   html{
     font-size: 10px;
@@ -37,6 +39,11 @@ const GlobalStyles = createGlobalStyle`
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
+  }
+  h6{
+    color:var(--white-color);
+    font-size:1.2rem;
+    padding-bottom:.6rem;
   }
 /* Smooth Scroll  */
   [data-scrollbar] {

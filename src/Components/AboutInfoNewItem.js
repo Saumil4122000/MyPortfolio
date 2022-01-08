@@ -48,7 +48,6 @@ export default function AboutInfoNewItem({
         {items.map((item, index) => (
           <div className="item" key={index}>
             <PText>{item}</PText>
-            
           </div>
         ))}
       </div>
