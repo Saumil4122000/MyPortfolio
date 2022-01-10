@@ -28,12 +28,36 @@ const HeroStyles = styled.div`
     position: relative;
     span {
       display: inline-block;
-      width: 100%;
     }
     .hero__name {
       font-family: "Montserrat SemiBold";
       font-size: 7rem;
       color: var(--white);
+      position: relative;
+      -webkit-text-stroke: 0.3vw #383d52;
+    }
+    .hero__name::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0%;
+      overflow: hidden;
+      color: #01fe87;
+      -webkit-text-stroke: 0vw #383d52;
+      height: 100%;
+      border-right: 2px solid #01fe87;
+      animation: animate 3s linear infinite;
+    }
+    @keyframes animate {
+      0%,
+      100%,
+      10% {
+        width: 0%;
+      }
+      70%,
+      90% {
+        width: 100%;
+      }
     }
   }
   .hero__img {
@@ -46,10 +70,9 @@ const HeroStyles = styled.div`
   .hero__info {
     margin-top: -18rem;
 
-
     // This is my addition
-    .button{
-      margin:2.4rem;
+    .button {
+      margin: 2.4rem;
     }
   }
   .hero__social,
@@ -103,7 +126,6 @@ const HeroStyles = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-   
     .hero {
       min-height: 750px;
     }
@@ -116,11 +138,11 @@ const HeroStyles = styled.div`
     }
     .hero__img {
       height: 300px;
-      padding:3px;
+      padding: 3px;
     }
     .hero__info {
       margin-top: 3rem;
-      padding:4px;
+      padding: 4px;
     }
     .hero__social {
       left: 0px;
@@ -130,7 +152,7 @@ const HeroStyles = styled.div`
         width: 20px;
         p {
           font-size: 1.2rem;
-          margin-left:5px;
+          margin-left: 5px;
         }
         img {
           max-height: 22px;
@@ -141,7 +163,7 @@ const HeroStyles = styled.div`
           li {
             svg {
               width: 30px;
-              margin-left:5px;
+              margin-left: 5px;
             }
           }
         }
@@ -163,8 +185,10 @@ export default function HeroSection() {
       <div className="hero">
         <div className="containor">
           <h1 className="hero__heading">
-            <span>Hello This is</span>
-            <span className="hero__name"> Shah Saumil</span>
+            <span style={{ width: "100%" }}>Hello This is Shah</span>
+            <span className="hero__name" data-text="Saumil">
+              Saumil
+            </span>
           </h1>
           <div className="hero__img">
             <img src={HeroImg} alt="" />
@@ -176,7 +200,7 @@ export default function HeroSection() {
               solving skills.
             </PText>
             <Button
-            className="button"
+              className="button"
               btnLink="/projects"
               btnText="This is my Work"
               outline={false}
@@ -192,28 +216,44 @@ export default function HeroSection() {
             <div className="hero__social__text">
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/" rel="noreferrer" className="icons">
+                  <a
+                    href="https://www.facebook.com/"
+                    rel="noreferrer"
+                    className="icons"
+                  >
                     <FaLinkedin />
                   </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/" rel="noreferrer" className="icons">
+                  <a
+                    href="https://www.facebook.com/"
+                    rel="noreferrer"
+                    className="icons"
+                  >
                     <FaGithubSquare />
                   </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/" rel="noreferrer" className="icons">
+                  <a
+                    href="https://www.facebook.com/"
+                    rel="noreferrer"
+                    className="icons"
+                  >
                     <FaFacebookSquare />
                   </a>
                 </li>
               </ul>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/" rel="noreferrer" className="icons">
+                  <a
+                    href="https://www.facebook.com/"
+                    rel="noreferrer"
+                    className="icons"
+                  >
                     <FaInstagramSquare />
                   </a>
                 </li>
