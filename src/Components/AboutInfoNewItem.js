@@ -40,6 +40,7 @@ const AboutItemStyles = styled.div`
 export default function AboutInfoNewItem({
   title = 'Title',
   items = ['HTML', 'CSS'],
+  role=""
 }) {
   return (
     <AboutItemStyles>
@@ -49,6 +50,7 @@ export default function AboutInfoNewItem({
           <div className="item" key={index}>
             <PText>{item}</PText>
           </div>
+          
         ))}
       </div>
     </AboutItemStyles>

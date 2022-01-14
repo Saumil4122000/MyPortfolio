@@ -114,13 +114,13 @@ export const NavMenu = () => {
         </div>
         <li>
           <NavLink
-            to="/Home"
+            to="/"
             onClick={() => setshowNav(!showNav)}
             role="button"
             onKeyDown={() => setshowNav(!showNav)}
             tabIndex={0}
           >
-            Home
+            HOME
           </NavLink>
         </li>
         <li>
@@ -131,7 +131,7 @@ export const NavMenu = () => {
             onKeyDown={() => setshowNav(!showNav)}
             tabIndex={0}
           >
-            Abouts
+            ABOUT
           </NavLink>
         </li>
         <li>
@@ -142,7 +142,18 @@ export const NavMenu = () => {
             onKeyDown={() => setshowNav(!showNav)}
             tabIndex={0}
           >
-            Projects
+            PROJECTS
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/skills"
+            onClick={() => setshowNav(!showNav)}
+            role="button"
+            onKeyDown={() => setshowNav(!showNav)}
+            tabIndex={0}
+          >
+            SKILLS
           </NavLink>
         </li>
         <li>
@@ -153,7 +164,7 @@ export const NavMenu = () => {
             onKeyDown={() => setshowNav(!showNav)}
             tabIndex={0}
           >
-            Contacts
+            CONTACTS
           </NavLink>
         </li>
       </ul>

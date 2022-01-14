@@ -60,7 +60,7 @@ export default function AboutInfoItem({
   title = "College",
   institute = "L.D College of Engineering",
   year = "2018-2022",
-  marks = "9.17 CGPA" 
+  marks = "" 
 }) {
   return (
     <AboutItemStyles>

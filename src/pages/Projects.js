@@ -4,6 +4,7 @@ import SectionTitle from "../Components/SectionTitle";
 import { MdSearch } from "react-icons/md";
 import ProjectItems from "../Components/ProjectItems";
 import ProjectInfo from "../assets/data/projects";
+
 const ProjectStyle = styled.div`
   padding: 10rem 0;
   .projects__allItems {
@@ -86,11 +87,14 @@ export default function Projects() {
                 img={item.img}
                 title={item.name}
                 desc={item.desc}
+                link={item.link}
               />
             );
           })}
         </div>
+        
       </div>
+     
     </ProjectStyle>
   );
 }

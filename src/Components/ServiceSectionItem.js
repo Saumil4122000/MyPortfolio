@@ -22,7 +22,7 @@ const ItemStyled=styled.div`
 
 
 
-export default function ServiceSectionItem({icon=<MdDesktopMac />,title="Web Design",content=" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam indoloremque quas, facilis aliquam id inventore, libero nobisreprehenderit excepturi eius error. Aspernatur non quos odio cumque vitae fuga eaque?"}) {
+export default function ServiceSectionItem({icon=<MdDesktopMac />,title="Web Design",content=" I am interested in web Design using Figma,Photoshop,Canva,Wix and Photoshop."}) {
   return (
     <ItemStyled>
       <div className="servicesItem__icon">

@@ -30,7 +30,7 @@ const ProgressBarStyles = styled.div`
       position: absolute;
       left: 0;
       bottom: 0;
-      background-color: var(--primary-color);
+      background-color: #30ff00;
       display:block;
       height:100%;
     }

@@ -56,8 +56,11 @@ const GlobalStyles = createGlobalStyle`
     .scrollbar-track.scrollbar-track-y {
       background: var(--deep-dark);
       .scrollbar-thumb-y {
-        background: var(--gray-1);
+        background: linear-gradient(transparent,#00c6ff);
       }
+      // .scrollbar-thumb-y:hover {
+      //   background: linear-gradient(transparent,#00c6ff);
+      // }
     }
   }
 `;

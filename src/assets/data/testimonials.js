@@ -1,25 +1,25 @@
 const testimonials = [
     {
       id: 1,
-      name: 'Shaif Arfan',
-      title: 'CEO',
-      org: 'WEB CIFAR',
+      name: 'Dipesh Vaghela',
+      title: 'Team Lead',
+      org: 'LD College of Engineering (Student)',
       desc:
-        'Ayan is a person of commitment. He is really good at what he is doing. I really like his work. Especially the unique point of view of designing.',
+        'Saumil is really good at what he is doing. I really like his work. Especially the unique point of view in decision making.',
     },
     {
       id: 2,
-      name: 'Fahim Elahe',
-      title: 'Co-founder',
-      org: 'Kreetive',
+      name: 'Dhruv Suthar',
+      title: 'Team Member',
+      org: 'LD College of Engineering (Student)',
       desc:
-        'Really amazing communication skills. Always understand what I am trying to achieve. Also, his work is really amazing. Do really high-quality work.',
+        'Really amazing communication skills.  Also, his work is really amazing. Really do hard work.',
     },
     {
       id: 3,
-      name: 'Sayed',
-      title: 'Marketing Head',
-      org: 'Eleven Dawn',
+      name: 'Arjun Prajapati',
+      title: 'Team Member',
+      org: 'LD College of Engineering (Student)',
       desc:
         'Really hard-working person. Deliver the work as promised. Planning to work more with this person.',
     },

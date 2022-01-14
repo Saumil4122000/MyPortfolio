@@ -2,7 +2,7 @@ import React from "react";
 import SectionTitle from "./SectionTitle";
 import PText from "./PText";
 import Button from "./Button";
-import AboutImg from "../assets/images/about-sec-img.png";
+import AboutImg from "../assets/images/main__2.jpg";
 import styled from "styled-components";
 
 
@@ -81,9 +81,8 @@ export default function AboutSection() {
             heading="About Me"
           />
           <PText>
-            I am a freelance website designer and developer from Chittagong,
-            Bangladesh. I create professional websites. I love art and always
-            try to show unique views to the audience through my design.
+            My name is Shah Saumil. I am tech enthusiastic always ready to explore different technologies.
+            I am very passionate about coding. I have developed good quality project.I am team player, connected, collaborates effectively to get things done, building and nurturing strong relationships.
           </PText>
           <div className="aboutSection__buttons">
             <Button btnText="Works" btnLink="/projects" />

@@ -7,23 +7,23 @@ const skillsF = [
         skills: [{
             id: uuidv4(),
             name: 'HTML5',
-            width: '70%'
+            width: '80%'
         }, {
             id: uuidv4(),
             name: 'CSS3',
-            width: '70%'
+            width: '75%'
         }, {
             id: uuidv4(),
             name: 'React',
-            width: '70%'
+            width: '85%'
         }, {
             id: uuidv4(),
             name: 'Angular',
-            width: '70%'
+            width: '60%'
         }, {
             id: uuidv4(),
             name: 'JAVASCRIPT',
-            width: '70%'
+            width: '75%'
         }],
     },
     {
@@ -36,11 +36,11 @@ const skillsF = [
         }, {
             id: uuidv4(),
             name: 'PHP',
-            width: '70%'
+            width: '65%'
         }, {
             id: uuidv4(),
             name: 'Express',
-            width: '70%'
+            width: '79%'
         }],
     }, {
         title: "DataBase",
@@ -48,15 +48,27 @@ const skillsF = [
         skills: [{
             id: uuidv4(),
             name: 'Mongo',
-            width: '70%'
+            width: '85%'
         }, {
             id: uuidv4(),
             name: 'Mysql',
-            width: '70%'
+            width: '80%'
         }, {
             id: uuidv4(),
             name: 'Fiirebase',
-            width: '70%'
+            width: '85%'
+        }]
+    },{
+        title:"App Devlopment",
+        id:uuidv4(),
+        skills:[{
+            id:uuidv4(),
+            name:"Android Studio",
+            width:'90%',
+        },{
+            id:uuidv4(),
+            name:"React Native",
+            width:'70%'
         }]
     }
 ];

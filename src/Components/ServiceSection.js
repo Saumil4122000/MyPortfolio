@@ -31,8 +31,8 @@ export default function ServiceSection() {
         />
         <div className="services__allItems">
           <ServiceSectionItem />
-          <ServiceSectionItem icon={<MdCode/>} title="Web Dev"/>
-          <ServiceSectionItem icon={<MdPhonelinkSetup/>} title="App Dev"/>
+          <ServiceSectionItem icon={<MdCode/>} title="Web Dev" content="I have experience in building the website and also have good practice in building frontend and backend of website."/>
+          <ServiceSectionItem icon={<MdPhonelinkSetup/>}  title="App Dev" content="App Devlopment is my passion. I have created moderate level of android application and learn many new things in Android app devlopment."/>
         </div>
       </div>
     </ServiceItemStyles>

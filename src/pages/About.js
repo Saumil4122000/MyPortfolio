@@ -1,12 +1,8 @@
 import React from "react";
 import PText from "../Components/PText";
-import Button from "../Components/Button";
-import AboutImg from "../assets/images/about-page-img.png";
+import AboutImg from "../assets/images/main__3.jpg";
 import styled from "styled-components";
 import AboutInfoItem from "../Components/AboutInfoItem";
-import AboutInfoNewItem from "../Components/AboutInfoNewItem";
-import Skills from "../Components/Skills";
-import SaumilSkills from "../assets/data/Skills.data";
 const AboutPageStyle = styled.div`
   padding: 20rem 0 10rem 0;
   .top-section {
@@ -15,6 +11,23 @@ const AboutPageStyle = styled.div`
     justify-content: center;
     gap: 2rem;
   }
+  .button {
+    font-size: 2.2rem;
+    background-color: ${(props) =>
+    props.outline ? "transparent" : `var(--gray-1)`};
+    padding: 0.7em 2em;
+    border-radius: 8px;
+    display: inline-block;
+    border: 2px solid var(--gray-1);
+    color: ${(props) => (props.outline ? `var(--gray-1)` : "black")};
+  }
+
+  @media only screen and (max-width: 768px) {
+    .button {
+      font-size: 1.8rem;
+    }
+  }
+
   .left {
     flex: 3;
   }
@@ -89,7 +102,6 @@ const AboutPageStyle = styled.div`
 `;
 
 export default function About() {
-
   return (
     <AboutPageStyle>
       <div className="container">
@@ -98,27 +110,38 @@ export default function About() {
             <p className="about__subheading">
               Hi I am <span>Shah Saumil</span>
             </p>
-            <h2 className="about__heading">A FreeLancer Web Devloper</h2>
+            <h2 className="about__heading">A Software Engineer</h2>
             <div className="about__info">
               <PText>
-                I am from chittagong, Bangladesh. A place of beauty and nature.
-                Since my childhood, i love art and design. I always try to
-                design stuff with my unique point of view. I also love to create
-                things that can be usefull to others.
-                <br /> <br />
-                I started coding since I was in high school. Coding is also an
-                art for me. I love it and now I have the opportunity to design
-                along with the coding. I find it really interesting and I
-                enjoyed the process a lot.
+                I am from Ahmedabad, Gujrat. A place known for history. I
+                started coding since I was in high school. Coding is my passion.
                 <br />
                 <br />
-                My vision is to make the world a better place. Now almost
-                everything is becoming better than ever. It is time for us to
-                create more good stuff that helps the world to become a better
-                place.
+                <br />
+                I find it really interesting and I enjoyed coding a lot. My
+                area of interest is app devlopment,Web devlopment. I am also
+                interested in Machine Learning and Deep Learning.
+                I have participated in many state level and college level hackathons.
+                Also our team has qualified for final round of state level hackathon.
+                <br />
+                <br />
+                <br />
+                My hobbies are reading books,playing games,solving puzzles,know
+                more about history and i always gain knowledge in chemistry. I
+                always ready to learn new technologies. I am team player,motivator,self-learner.
+                I have solved more than
+                500 coding questions on different platform this is my
+                achievements.
               </PText>
             </div>
-            <Button btnText="Download CV" btnLink="#" />
+
+            <a
+              href="https://github.com/Saumil4122000/resume/raw/main/Saumil's%20Resume.pdf"
+              className="button"
+              download
+            >
+              Download CV
+            </a>
           </div>
           <div className="right">
             <img src={AboutImg} alt="" />
@@ -149,36 +172,64 @@ export default function About() {
             </div>
           </div>
           <div className="about__info__item">
-            <h1 className="about__info__heading">My Skills</h1>
-            <Skills
-              title={SaumilSkills.at(0).title}
-              mySkills={SaumilSkills.at(0).skills}
-            />
-            <Skills
-              title={SaumilSkills.at(1).title}
-              mySkills={SaumilSkills.at(1).skills}
-            />
-            <Skills
-              title={SaumilSkills.at(2).title}
-              mySkills={SaumilSkills.at(2).skills}
-            />
-
+            <h1 className="about__info__heading">Internships</h1>
+            <div className="main__content">
+              <AboutInfoItem
+                title="Crest Data Systems"
+                institute={["Software Engineer Intern"]}
+                year="Jan-2021 To Present"
+              />
+              <AboutInfoItem
+                title="Akash TechnoLabs"
+                institute={["Android Devloper Intern"]}
+                year="May-2021 To June-2021"
+              />
+              <AboutInfoItem
+                title="BrainyBeams"
+                institute={["Java Devloper Intern"]}
+                year="May-2021 To June-2021"
+              />
+              <AboutInfoItem
+                title="The Spark Foundation"
+                institute={["Android Devloper Intern"]}
+                year="Mar-2021 To April-2021"
+              />
+            </div>
           </div>
           <div className="about__info__item">
-            <h1 className="about__info__heading">Experiences</h1>
-
-            <AboutInfoNewItem
-              title="2010-2012"
-              items={["junior developer at web Cifar"]}
-            />
-            <AboutInfoNewItem
-              title="2012-2016"
-              items={["Front end developer at web Cifar "]}
-            />
-            <AboutInfoNewItem
-              title="2016-"
-              items={["Freelance web Developer"]}
-            />
+            <h1 className="about__info__heading">Certification</h1>
+            <div className="main__content">
+              <AboutInfoItem
+                title="Jovian"
+                institute={["Deep Learning"]}
+                year="03-2021 To 05-2021"
+                marks=""
+              />
+              <AboutInfoItem
+                title="Jovian"
+                institute={["Data Analysis"]}
+                year="08-2020 To 10-2020"
+                marks=""
+              />
+              <AboutInfoItem
+                title="Udemy"
+                institute={["React"]}
+                year="07-2020 To 09-2020"
+                marks=""
+              />
+              <AboutInfoItem
+                title="Udacity"
+                institute={["Android App devlopment"]}
+                year="07-2020 To 08-2020"
+                marks=""
+              />
+              <AboutInfoItem
+                title="Udemy"
+                institute={["HTML,CSS,JS"]}
+                year="02-2020 To 03-2020"
+                marks=""
+              />
+            </div>
           </div>
         </div>
       </div>

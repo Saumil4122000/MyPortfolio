@@ -54,9 +54,15 @@ export default function ContactSection() {
         <SectionTitle heading="Contact" subheading="Get in Touch" />
         <div className="contactSection__wrapper">
           <div className="left">
-            <ContactInfo icon={<MdLocalPhone />} text="+91-8320012687" />
-            <ContactInfo icon={<MdEmail />} text="saumil715@gmail.com" />
-            <ContactInfo text="Ahmedabad,India" />
+            <a href="tel:+91-8320012687" target="_blank" rel="noreferrer">
+              <ContactInfo icon={<MdLocalPhone />} text="+91-8320012687" />
+            </a>
+            <a href="mailto:saumil715@gmail.com" target="_blank" rel="noreferrer">
+              <ContactInfo icon={<MdEmail />} text="saumil715@gmail.com" />
+            </a>
+            <a href="https://goo.gl/maps/yfMGmxK6MR5NdXWu5" target="_blank" rel="noreferrer">
+              <ContactInfo text="Ahmedabad,India" />
+            </a>
           </div>
           <div className="right">
             <ContactForm />

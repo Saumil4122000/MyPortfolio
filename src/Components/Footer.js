@@ -62,7 +62,8 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__coll__title">Shah Saumil</h1>
           <PText>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, iusto blanditiis corporis quasi illum aut magni vero soluta sint? Mollitia sunt molestiae veritatis. Architecto, hic provident? Iste aut eligendi modi!
+            My name is Shah Saumil. I am tech enthusiastic always ready to explore different technologies.
+            I am very passionate about coding.I am team player,motivator,self-learner.
           </PText>
         </div>
         <div className="footer__col2">
@@ -116,19 +117,19 @@ export default function Footer() {
             heading="Social Links"
             Links={[
               {
-                path: "https://www.facebook.com/",
+                path: "https://www.linkedin.com/in/saumil-shah-270b2919a/",
                 title: "LinkedIn",
               },
               {
-                path: "https://www.facebook.com/",
+                path: "https://github.com/Saumil4122000",
                 title: "GitHub",
               },
               {
-                path: "https://www.facebook.com/",
+                path: "https://www.instagram.com/saumil_shah313/",
                 title: "Instagram",
               },
               {
-                path: "https://www.facebook.com/",
+                path: "https://www.facebook.com/saumil.shah.39750",
                 title: "Facebook",
               },
             ]}
@@ -137,7 +138,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>&#9400; 2022 Shah Saumil | Designed by Saumil Shah</PText>
+          <PText> Designed by Saumil Shah</PText>
         </div>
       </div>
     </FooterStyles>

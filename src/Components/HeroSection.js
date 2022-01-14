@@ -1,5 +1,5 @@
 import React from "react";
-import HeroImg from "../assets/images/hero.png";
+import MainImg from "../assets/images/main.jpg";
 import Button from "./Button";
 import PText from "./PText";
 import SocialMediaArrow from "../assets/images/social-media-arrow.svg";
@@ -11,6 +11,7 @@ import {
   FaFacebookSquare,
   FaInstagramSquare,
 } from "react-icons/fa";
+
 const HeroStyles = styled.div`
   .hero {
     height: 100vh;
@@ -22,7 +23,7 @@ const HeroStyles = styled.div`
     justify-content: center;
     position: relative;
   }
-  .hero__heading {
+  .hero .hero__heading {
     font-size: 2rem;
     margin-bottom: -4rem;
     position: relative;
@@ -34,7 +35,6 @@ const HeroStyles = styled.div`
       font-size: 7rem;
       color: var(--white);
       position: relative;
-      -webkit-text-stroke: 0.3vw #383d52;
     }
     .hero__name::before {
       content: attr(data-text);
@@ -61,9 +61,9 @@ const HeroStyles = styled.div`
     }
   }
   .hero__img {
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
-    height: 600px;
+    height: 700px;
     margin: 0 auto;
     border: 2px solid var(--gray-1);
   }
@@ -115,16 +115,10 @@ const HeroStyles = styled.div`
     ul {
       li {
         margin-bottom: 1rem;
-        a {
-          // display: inline-block;
-          // font-size: 1.6rem;
-          // transform: rotate(-90deg);
-          // letter-spacing: 5px;
-          // margin-bottom: 2rem;
-        }
       }
     }
   }
+
   @media only screen and (max-width: 768px) {
     .hero {
       min-height: 750px;
@@ -191,13 +185,15 @@ export default function HeroSection() {
             </span>
           </h1>
           <div className="hero__img">
-            <img src={HeroImg} alt="" />
+            <img src={MainImg} alt="" />
           </div>
           <div className="hero__info">
             <PText>
-              I am working as Software Engineer Intern at Crest Data System. I
-              am android and web devloper with good experience and good problem
-              solving skills.
+              <div className="change_style" style={{ color: "#ffffff" }}>
+                I am currently working as Software Engineer Intern at Crest Data
+                System. I am android and web devloper with good experience and
+                good problem solving skills.
+              </div>
             </PText>
             <Button
               className="button"
@@ -217,7 +213,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://www.linkedin.com/in/saumil-shah-270b2919a/"
                     rel="noreferrer"
                     className="icons"
                   >
@@ -228,7 +224,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://github.com/Saumil4122000"
                     rel="noreferrer"
                     className="icons"
                   >
@@ -239,7 +235,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://www.facebook.com/saumil.shah.39750"
                     rel="noreferrer"
                     className="icons"
                   >
@@ -250,7 +246,7 @@ export default function HeroSection() {
               <ul>
                 <li>
                   <a
-                    href="https://www.facebook.com/"
+                    href="https://www.instagram.com/saumil_shah313/"
                     rel="noreferrer"
                     className="icons"
                   >

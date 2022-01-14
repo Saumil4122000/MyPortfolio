@@ -83,6 +83,11 @@ function displaybtn(e) {
     div.remove();
   }, 2000);
 }
+function clear__data() {
+  document.getElementById('name').value = '';
+  document.getElementById('email').value = '';
+  document.getElementById('message').value = '';
+}
 function sendEmail(e) {
   e.preventDefault();
   emailjs
@@ -107,6 +112,7 @@ function sendEmail(e) {
       toastTimer = setTimeout(() => {
         div.remove();
       }, 2000);
+      clear__data();
     })
     .catch((err) => {
       var div = document.createElement("div");
@@ -130,7 +136,7 @@ export default function ContactForm() {
   const [name, setname] = useState("");
   const [email, setemail] = useState("");
   const [message, setmessage] = useState("");
-  
+
   return (
     <FormStyle>
       <form
