@@ -66,23 +66,6 @@ const FormStyle = styled.div`
     }
 `;
 
-function displaybtn(e) {
-  e.preventDefault();
-  var myobj = document.getElementById("btnSubmit");
-  myobj.remove();
-  var div = document.createElement("div");
-  let element = document.getElementById("form__tag");
-  let toastTimer;
-  element.appendChild(div);
-  div.id = "container";
-  div.innerHTML = "Mail Send Successfully";
-  div.className = "toast";
-  div.style.transform = "translate(-50%,0)";
-  clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => {
-    div.remove();
-  }, 2000);
-}
 function clear__data() {
   document.getElementById('name').value = '';
   document.getElementById('email').value = '';
